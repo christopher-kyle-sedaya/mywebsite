@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+/* Defining color variables for easy use throughout code */
+
+* {
+  --color1: #845ec2;
+  --color2: #b0a8b9;
+  --color3: #c34a36;
+  --color4: #bea6a0;
+}
+
+/* Tbh i don't know why it's normal convention to do this, but i'm doing it anyways */
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color2);
+}
+
+/* Setting the fonts  */
+
+header div h1,
+#About-me h2,
+#Hobbies h2,
+#Hero-section .Hero-text h2 {
+  font-family: "Jersey 15";
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: "Jetbrains Mono";
+  font-size: 1.5rem;
+}
+
+a {
+  font-family: "Jetbrains Mono";
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  background-color: var(--color1);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.9);
+}
+
+header .header-wrapper {
+  background-color: var(--color4);
+  border-radius: 10px;
+}
+
+header .header-wrapper nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#Hero-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em;
+}
+
+#Hero-section .image-of-me img {
+  width: 50%;
+  border-radius: 10%;
+  border: dashed var(--color1);
+}
+
+.About-me-wrapper {
+  display:flex;
+  flex-direction: row-reverse;
+  padding: 3em;
+}
+
+.About-me-wrapper .about-me-image {
+  display: flex;
+  justify-content: end;
+}
+
+#About-me .about-me-image img {
+  width: 40%;
+  border-radius: 10%;
+  border: dashed var(--color1);
+}
+
+
+.Hobbies-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em
+}
+
+.Hobbies-wrapper .Hobbies-Image img{
+  width: 50%;
+  border: dashed var(--color1);
+  border-radius: 100%;
+}
+
+#Footer .footer-text{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color4);
+}
+
+#Footer .footer-text p{
+  font-size: 0.8em;
+}
